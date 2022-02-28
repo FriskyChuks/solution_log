@@ -1,0 +1,16 @@
+{% block content %}
+<center><form action=""method="POST">
+{% csrf_token %}
+<h2>Are you sure you want to delete ?</h2>
+    <h3 ><i>"{{obj}}"</i></h3></p>
+<button style="background-color: green; font-size: x-large;  ><a href="{% url 'solution_list' %}">Cancle</a></button>
+<input style="background-color: red; font-size: x-large;text-decoration: none; color:white"  type="submit" value="Delete">
+
+
+
+</form>
+</center>
+
+
+
+{% endblock %}
